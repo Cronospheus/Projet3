@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Ohmyfood</title>
   </head>
   <body>
-    <h1>ohmyfood</h1>
+    <header>
+      <h1>ohmyfood</h1>
+    </header>
+    <main>
+      <section class="reservation">
+        <i class="fa-solid fa-location-dot one"></i>
+        <form>
+          <label for="site_search">Paris, Belleville</label>
+          <input
+            placeholder="Paris, Belleville"
+            name="ville"
+            type="text"
+            id="site_search"
+          />
+          <div class="reservation_txt">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>
+              Découvrez des restaurants d'exception, séléctionnés par nos soins
+            </p>
+          </div>
+          <button type="submit">Explorer nos restaurants</button>
+        </form>
+      </section>
+      <section class="fonctionnement">
+        <h2>fonctionnement</h2>
+        <ol>
+          <li>
+            <i class="fa-solid fa-tablet-screen-button"></i>Choisissez un
+            restaurant
+          </li>
+          <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
+          <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+        </ol>
+      </section>
+      <section class="restaurants">
+        <h2>Restaurants</h2>
+        <a href="#">
+          <article class="cards">
+            <img src="img/jay-wennington" alt="jay-wennington" />
+            <h3>La palette du goût</h3>
+            <p>Ménilmontant</p>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p>Nouveau</p>
+          </article>
+        </a>
+        <a href="#">
+          <article class="cards">
+            <img src="img/louis-hansel-shotsoflouis" alt="louis_hansel" />
+            <h3>La note enchantée</h3>
+            <p>Charonne</p>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p>Nouveau</p>
+          </article>
+        </a>
+        <a href="#">
+          <article class="cards">
+            <img src="img/stil" alt="stil" />
+            <h3>À la française</h3>
+            <p>Cité rouge</p>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="cards">
+            <img src="img/toa-heftiba.jpg" alt="toa-heftiba" />
+            <h3>Le délice des sens</h3>
+            <p>Folie-Méricourt</p>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <img class="logo_invert" src="/img/ohmyfood.png" alt="logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-utensils"></i>Proposer un restaurant></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
