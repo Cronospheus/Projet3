@@ -19,14 +19,12 @@ header,
 main {
   max-width: 1440px;
   margin: 0 auto;
+  text-align: center;
 }
-body h1 {
-  font-size: 2.2rem;
+h1 {
+  font-family: "Shrikhand", cursive;
   font-weight: bold;
   color: black;
-}
-h3 {
-  font-size: 1.6rem;
 }
 img {
   object-fit: cover;
@@ -35,7 +33,88 @@ a {
   text-decoration: none;
   color: black;
 }
+li {
+  list-style-type: none;
+}
 .logo_invert {
   filter: invert(100%);
   -webkit-filter: invert(100%);
+}
+
+/*ENTETE*/
+header {
+  box-shadow: 0px 2px 5px rgb(184, 182, 182);
+}
+h1 {
+  padding: 2rem 0 1rem 0;
+  margin: 0.15rem 0;
+}
+
+/*LOCALISATION*/
+
+label {
+  position: absolute;
+  left: -999px;
+}
+form {
+  background-color: #e9e8e8;
+}
+.localisation {
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-align: justify;
+  background-color: #e9e8e8;
+}
+input {
+  border: none;
+  text-align: center;
+  background-color: #e9e8e8;
+}
+.fa-location-dot {
+  position: relative;
+  left: 3rem;
+}
+
+/*RESERVATION*/
+
+.reservation_txt {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 4rem;
+  background-color: #f2f2f2;
+}
+.reservation_txt h2 {
+  padding: 0rem 2rem 1.5rem 1.5rem;
+}
+.reservation_txt p {
+  padding-bottom: 3rem;
+}
+button {
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(180deg, #eb72da, #a45cdb);
+  color: white;
+  box-shadow: 0px 2px 10px rgb(160, 155, 155);
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+}
+
+/*FONCTIONNEMENT*/
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement li {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  border-radius: 25px;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fonctionnement li:before {
+  content: counter(li);
+  counter-increment: li;
 }

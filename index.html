@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,44 +23,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Ohmyfood</title>
   </head>
   <body>
     <header>
-      <img src="img/ohmyfood.png" alt="logo" />
+      <h1>ohmyfood</h1>
     </header>
     <main>
       <section class="reservation">
-        <i class="fa-solid fa-location-dot one"></i>
         <form>
-          <label for="site_search">Paris, Belleville</label>
-          <input
-            placeholder="Paris, Belleville"
-            name="ville"
-            type="text"
-            id="site_search"
-          />
+          <div class="localisation">
+            <i class="fa-solid fa-location-dot one"></i>
+            <label for="site_search">Paris, Belleville</label>
+            <input
+              placeholder="Paris, Belleville"
+              name="ville"
+              type="text"
+              id="site_search"
+            />
+          </div>
           <div class="reservation_txt">
             <h2>Réservez le menu qui vous convient</h2>
             <p>
-              Découvrez des restaurants d'exception, séléctionnés par nos soins
+              Découvrez des restaurants d'exception, séléctionnés par nos soins.
             </p>
+            <button type="submit">Explorer nos restaurants</button>
           </div>
-          <button type="submit">Explorer nos restaurants</button>
         </form>
       </section>
       <section class="fonctionnement">
         <h2>fonctionnement</h2>
-        <ol>
-          <li>
-            <i class="fa-solid fa-tablet-screen-button"></i>Choisissez un
-            restaurant
-          </li>
-          <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
-          <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
-        </ol>
+        <nav>
+          <ol>
+            <li>
+              <i class="fa-solid fa-tablet-screen-button"></i>Choisissez un
+              restaurant
+            </li>
+            <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+          </ol>
+        </nav>
       </section>
       <section class="restaurants">
         <h2>Restaurants</h2>
