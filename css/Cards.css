@@ -38,6 +38,10 @@ a {
   text-decoration: none;
   color: black;
 }
+i:hover,
+button:hover {
+  cursor: pointer;
+}
 li {
   list-style-type: none;
 }
@@ -119,38 +123,80 @@ h1 {
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #99e3d1;
 }
-.list ul {
-  background-color: #f2f2f2;
+.slidedown1 {
+  animation: slideDown 1s;
+  animation-delay: 0s;
 }
-.list li {
+.slidedown2 {
+  animation: slideDown 1s;
+  animation-delay: 0.2s;
+}
+.slidedown3 {
+  animation: slideDown 1s;
+  animation-delay: 0.4s;
+}
+.menuitem {
   background-color: white;
   box-shadow: 0px 1px 10px rgb(184, 178, 178);
   border-radius: 15px;
+  overflow: hidden;
   padding: 1.5rem;
   margin: 2rem;
+
+  position: relative;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: flex-end;
 }
-.list li:hover {
-  animation-duration: 1sec;
-  animation-name: slidein;
-}
-@keyframes slidein {
+
+@keyframes slideDown {
   from {
-    margin-right: 100%;
-    width: 300%;
+    transform: translateY(200px);
+    opacity: 0;
   }
   to {
-    margin-left: 0%;
-    width: 100%;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-.list h4 {
+.menu_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_prix {
+  display: flex;
+  font-weight: bold;
+}
+.menu_titre {
   font-weight: bold;
   padding-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.space {
+.menu_description {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+/*
+.fa-circle-check {
+  position: absolute;
+  font-size: 20px;
+  margin-top: -2rem;
+  margin-left: -3rem;
+  background-color: #98e2d1;
+  color: white;
+  padding: 1rem;
+}*/
+
 button {
   font-weight: bold;
   border: none;
@@ -211,13 +257,14 @@ footer li {
     flex-direction: column;
   }
 
-  .list nav {
+  .menus {
     display: flex;
+    justify-content: center;
   }
   .list ul {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
   }
   .button {
     border-radius: 0 0 40px 40px;
