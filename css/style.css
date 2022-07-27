@@ -53,6 +53,7 @@ li {
   inset: 0;
   z-index: 10;
   animation: disappear 2s 2s forwards;
+  opacity: 0.9;
 }
 @keyframes disappear {
   0% {
@@ -66,7 +67,6 @@ li {
   position: relative;
   margin: 0 auto;
   top: 25vh;
-  width: 100vw;
   text-align: center;
   font-family: "Amatic SC";
   font-size: 6vh;
@@ -79,7 +79,6 @@ li {
   position: relative;
   margin: 0 auto;
   top: 0;
-  width: 75vh;
   height: 75vh;
   overflow: hidden;
 }

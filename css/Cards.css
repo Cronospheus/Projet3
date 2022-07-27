@@ -47,7 +47,7 @@ li {
 }
 /*ENTETE*/
 header {
-  position: relative;
+  padding: 1.3rem;
 }
 h1 {
   padding: 2rem 0 1rem 0;
@@ -126,23 +126,32 @@ h1 {
 .slidedown1 {
   animation: slideDown 1s;
   animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 .slidedown2 {
   animation: slideDown 1s;
   animation-delay: 0.2s;
+  animation-iteration-count: 1;
 }
+
 .slidedown3 {
   animation: slideDown 1s;
   animation-delay: 0.4s;
+  animation-iteration-count: 1;
 }
+.slidedown4 {
+  animation: slideDown 1s;
+  animation-delay: 0.6s;
+  animation-iteration-count: 1;
+}
+
 .menuitem {
   background-color: white;
   box-shadow: 0px 1px 10px rgb(184, 178, 178);
   border-radius: 15px;
   overflow: hidden;
-  padding: 1.5rem;
+  height: 7rem;
   margin: 2rem;
-
   position: relative;
   animation-fill-mode: both;
   display: flex;
@@ -169,7 +178,7 @@ h1 {
   text-overflow: ellipsis;
 }
 .menu_prix {
-  display: flex;
+  padding-bottom: 1.2rem;
   font-weight: bold;
 }
 .menu_titre {
@@ -186,17 +195,54 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/*
-.fa-circle-check {
-  position: absolute;
+.menu_confirmation {
+  position: relative;
   font-size: 20px;
-  margin-top: -2rem;
-  margin-left: -3rem;
+  margin: -5.7rem -6rem 0 1.5rem;
   background-color: #98e2d1;
   color: white;
-  padding: 1rem;
-}*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 75px;
+}
+.fa-circle-check {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuitem:hover {
+  cursor: pointer;
+}
+.menuitem:hover .menu_confirmation {
+  transition-duration: 1s;
+  animation: slideLeft 1s forwards;
+}
 
+.menuitem:hover .fa-circle-check {
+  animation: slideLeftbutton 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+  from {
+    margin-right: -6rem;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slideLeftbutton {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 button {
   font-weight: bold;
   border: none;
@@ -259,7 +305,11 @@ footer li {
 
   .menus {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menuitem {
+    width: 50%;
   }
   .list ul {
     display: flex;
