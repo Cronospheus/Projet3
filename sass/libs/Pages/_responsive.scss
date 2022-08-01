@@ -1,0 +1,58 @@
+@media #{$medium-up} {
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+    nav {
+      width: 90%;
+    }
+  }
+}
+@media #{$large-up} {
+  header {
+    border-radius: 20px;
+    width: 98%;
+  }
+  form {
+    border-radius: 25px;
+  }
+  .reservation_txt {
+    border-radius: 0 0 25px 25px;
+  }
+  .reservation {
+    padding: 0 15px;
+    margin: 5rem 0rem;
+  }
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+    nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    ol {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .text_color_fonctionnement {
+    padding-left: 2rem;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 1.5rem;
+    border-radius: 25px;
+    margin: 5rem 1.5rem;
+    h2 {
+      flex-basis: 100%;
+      margin-left: 2rem;
+    }
+    a {
+      width: 50%;
+      justify-content: space-around;
+    }
+  }
+}

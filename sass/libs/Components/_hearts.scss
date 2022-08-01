@@ -1,0 +1,23 @@
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3rem;
+}
+.solid {
+  background: $button-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+.regu {
+  color: #d4d5d4;
+  &:hover {
+    display: none;
+  }
+}

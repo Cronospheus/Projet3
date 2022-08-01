@@ -1,4 +1,300 @@
-/* GLOBAL*/
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+       * Render the `main` element consistently in IE.
+       */
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+         ========================================================================== */
+/**
+       * 1. Add the correct box sizing in Firefox.
+       * 2. Show the overflow in Edge and IE.
+       */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+       * 1. Correct the inheritance and scaling of font size in all browsers.
+       * 2. Correct the odd `em` font sizing in all browsers.
+       */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+         ========================================================================== */
+/**
+       * Remove the gray background on active links in IE 10.
+       */
+a {
+  background-color: transparent;
+}
+
+/**
+       * 1. Remove the bottom border in Chrome 57-
+       * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+       */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+       * Add the correct font weight in Chrome, Edge, and Safari.
+       */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+       * 1. Correct the inheritance and scaling of font size in all browsers.
+       * 2. Correct the odd `em` font sizing in all browsers.
+       */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+       * Add the correct font size in all browsers.
+       */
+small {
+  font-size: 80%;
+}
+
+/**
+       * Prevent `sub` and `sup` elements from affecting the line height in
+       * all browsers.
+       */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+         ========================================================================== */
+/**
+       * Remove the border on images inside links in IE 10.
+       */
+img {
+  border-style: none;
+}
+
+/* Forms
+         ========================================================================== */
+/**
+       * 1. Change the font styles in all browsers.
+       * 2. Remove the margin in Firefox and Safari.
+       */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+       * Show the overflow in IE.
+       * 1. Show the overflow in Edge.
+       */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+       * Remove the inheritance of text transform in Edge, Firefox, and IE.
+       * 1. Remove the inheritance of text transform in Firefox.
+       */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+       * Correct the inability to style clickable types in iOS and Safari.
+       */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+       * Remove the inner border and padding in Firefox.
+       */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+       * Restore the focus styles unset by the previous rule.
+       */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+       * Correct the padding in Firefox.
+       */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+       * 1. Correct the text wrapping in Edge and IE.
+       * 2. Correct the color inheritance from `fieldset` elements in IE.
+       * 3. Remove the padding so developers are not caught out when they zero out
+       *    `fieldset` elements in all browsers.
+       */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+       * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+       */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+       * Remove the default vertical scrollbar in IE 10+.
+       */
+textarea {
+  overflow: auto;
+}
+
+/**
+       * 1. Add the correct box sizing in IE 10.
+       * 2. Remove the padding in IE 10.
+       */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+       * Correct the cursor style of increment and decrement buttons in Chrome.
+       */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+       * 1. Correct the odd appearance in Chrome and Safari.
+       * 2. Correct the outline style in Safari.
+       */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+       * Remove the inner padding in Chrome and Safari on macOS.
+       */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+       * 1. Correct the inability to style clickable types in iOS and Safari.
+       * 2. Change font properties to `inherit` in Safari.
+       */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+         ========================================================================== */
+/*
+       * Add the correct display in Edge, IE 10+, and Firefox.
+       */
+details {
+  display: block;
+}
+
+/*
+       * Add the correct display in all browsers.
+       */
+summary {
+  display: list-item;
+}
+
+/* Misc
+         ========================================================================== */
+/**
+       * Add the correct display in IE 10+.
+       */
+template {
+  display: none;
+}
+
+/**
+       * Add the correct display in IE 10.
+       */
+[hidden] {
+  display: none;
+}
+
 *,
 ::before,
 ::after {
@@ -27,7 +323,7 @@ main {
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: bold;
-  color: black;
+  color: #353535;
   padding: 2rem 0 1rem 0;
   margin: 0.15rem 0;
   font-size: 2.5rem;
@@ -39,7 +335,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #353535;
 }
 
 li {
@@ -55,14 +351,7 @@ li {
   animation: disappear 2s 2s forwards;
   opacity: 0.9;
 }
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
+
 #loaderscreen h2 {
   position: relative;
   margin: 0 auto;
@@ -114,6 +403,7 @@ li {
   border-radius: 100%;
   transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
 }
+
 #cooking #area #sides #pan {
   position: absolute;
   bottom: 20%;
@@ -199,6 +489,14 @@ li {
   animation: bubble 1.6s ease-in-out 1s infinite;
 }
 
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1, 1);
@@ -212,39 +510,31 @@ li {
     transform: scale(1, 1);
   }
 }
-
 @keyframes flip {
   0% {
     transform: rotate(0deg);
   }
-
   5% {
     transform: rotate(-27deg);
   }
-
   30%,
   50% {
     transform: rotate(0deg);
   }
-
   55% {
     transform: rotate(27deg);
   }
-
   83.3% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
-
 @keyframes switchSide {
   0% {
     transform: rotateY(0deg);
   }
-
   50% {
     transform: rotateY(180deg);
   }
@@ -252,7 +542,6 @@ li {
     transform: rotateY(0deg);
   }
 }
-
 @keyframes jump {
   0% {
     top: 24;
@@ -273,7 +562,6 @@ li {
     transform: rotateX(85deg);
   }
 }
-
 @keyframes fly {
   0% {
     bottom: 26%;
@@ -294,7 +582,6 @@ li {
     transform: rotate(0deg);
   }
 }
-
 @keyframes bubble {
   0% {
     transform: scale(0.15, 0.15);
@@ -311,13 +598,9 @@ li {
     opacity: 0;
   }
 }
-
-/*ENTETE*/
 header {
   box-shadow: 0px 2px 5px rgb(184, 182, 182);
 }
-
-/*LOCALISATION*/
 
 label {
   position: absolute;
@@ -346,19 +629,15 @@ input {
   left: 3rem;
 }
 
-/*RESERVATION*/
-
 .reservation_txt {
   width: 100%;
   margin: 1.5rem 0;
   padding: 4rem;
   background-color: #f2f2f2;
 }
-
 .reservation_txt h2 {
   padding: 0rem 2rem 1.5rem 1.5rem;
 }
-
 .reservation_txt p {
   padding-bottom: 3rem;
 }
@@ -367,24 +646,20 @@ button {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(180deg, #eb72da, #a45cdb);
-  color: white;
+  color: #e6e6e6;
   box-shadow: 0px 2px 10px rgb(160, 155, 155);
   padding: 1.5rem 2rem;
   border-radius: 25px;
 }
-
 button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 
-/*FONCTIONNEMENT*/
-
 .fonctionnement {
   display: flex;
   flex-direction: column;
 }
-
 .fonctionnement li {
   background-color: #f2f2f2;
   padding: 3rem;
@@ -395,18 +670,13 @@ button:hover {
   justify-content: space-evenly;
   position: relative;
 }
-
-.fonctionnement ol {
-  counter-reset: section;
-}
-
 .fonctionnement li:before {
   content: counter(section);
   counter-increment: section;
   position: absolute;
   left: -10px;
   background-color: #9356dc;
-  color: white;
+  color: #e6e6e6;
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -416,27 +686,17 @@ button:hover {
   font-weight: bold;
   font-size: 13px;
 }
-
 .fonctionnement li:hover {
   background-color: #f5edff;
   color: #9356dc;
   cursor: pointer;
 }
+.fonctionnement ol {
+  counter-reset: section;
+}
 
 .text_color_fonctionnement {
-  color: black;
-}
-
-/*CARDS*/
-
-.restaurants a:hover {
-  transform: scale(1.05);
-}
-
-.cards img {
-  height: 200px;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
+  color: #353535;
 }
 
 .restaurants {
@@ -446,32 +706,36 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-
-.restaurants h2 {
-  padding-bottom: 1.5rem;
-  text-align: left;
-}
-
 .restaurants a {
   margin: 1rem 0;
   display: flex;
   justify-content: center;
 }
+.restaurants a:hover {
+  transform: scale(1.05);
+}
+.restaurants h2 {
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
 
 .cards {
   width: 95%;
   border-radius: 15px;
-  background-color: white;
+  background-color: #e6e6e6;
   position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-
+.cards img {
+  height: 200px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
 .cards h3 {
   margin: 1.5rem 0 0.5rem 1rem;
 }
-
 .cards p {
   margin: 0 0 1.5rem 1rem;
 }
@@ -485,13 +749,12 @@ button:hover {
 }
 
 .solid {
-  background: linear-gradient(#eb72da, #a45cdb);
+  background: linear-gradient(180deg, #eb72da, #a45cdb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 0.3s;
 }
-
 .solid:hover {
   opacity: 1;
 }
@@ -514,49 +777,67 @@ button:hover {
   background-color: #99e2d0;
 }
 
-/*FOOTER*/
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3rem;
+}
+
+.solid {
+  background: linear-gradient(180deg, #eb72da, #a45cdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 0.3s;
+}
+.solid:hover {
+  opacity: 1;
+}
+
+.regu {
+  color: #d4d5d4;
+}
+.regu:hover {
+  display: none;
+}
 
 footer {
   background-color: #353535;
   padding: 3rem;
   text-align: center;
 }
-
 footer h3 {
   font-family: "Shrikhand", cursive;
   color: white;
   font-weight: lighter;
   padding-bottom: 2rem;
 }
-
 footer a {
-  color: white;
+  color: #e6e6e6;
 }
-
 footer i {
   padding-right: 1rem;
 }
-
 footer li {
   padding-bottom: 1rem;
 }
 
-/*MEDIAQUERRIES*/
-
-/*GLOBAL*/
-
-/*HEADER*/
-
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+  }
+  .fonctionnement nav {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1024px) {
   header {
     border-radius: 20px;
     width: 98%;
   }
-}
-
-/*RESERVATION*/
-
-@media screen and (min-width: 1024px) {
   form {
     border-radius: 25px;
   }
@@ -567,27 +848,10 @@ footer li {
     padding: 0 15px;
     margin: 5rem 0rem;
   }
-}
-
-/*FONCTIONNEMENT*/
-
-@media screen and (min-width: 768px) {
-  .fonctionnement nav {
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-  }
-}
-.fonctionnement {
-  display: flex;
-  align-items: center;
-}
-@media screen and (min-width: 1024px) {
   .fonctionnement {
     display: flex;
     align-items: center;
   }
-
   .fonctionnement nav {
     display: flex;
     justify-content: center;
@@ -597,13 +861,9 @@ footer li {
     display: flex;
     justify-content: center;
   }
-}
-.text_color_fonctionnement {
-  padding-left: 2rem;
-}
-/*RESTAURANTS*/
-
-@media screen and (min-width: 1024px) {
+  .text_color_fonctionnement {
+    padding-left: 2rem;
+  }
   .restaurants {
     display: flex;
     flex-direction: row;
@@ -622,3 +882,5 @@ footer li {
     justify-content: space-around;
   }
 }
+
+/*# sourceMappingURL=style2.css.map */

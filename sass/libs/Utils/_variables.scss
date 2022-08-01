@@ -1,0 +1,26 @@
+// Principales
+
+// Utilitaires couleurs
+$white: #e6e6e6;
+$black: #353535;
+$grey-light: #f2f2f2;
+$grey-strong: #e9e8e8;
+$purple-light: #f5edff;
+$purple-strong: #9356dc;
+$green-light: #99e2d0;
+$green-strong: #47b198;
+$box-shadow: rgb(184, 182, 182);
+$button-color: linear-gradient(180deg, #eb72da, #a45cdb);
+
+// Textes
+$color-text: #12130f;
+
+// Utilitaires responsive
+
+$medium: 768px !default;
+$large: 1024px !default;
+
+$medium-up: "only screen and (min-width: #{$medium})";
+$medium-down: "only screen and (max-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
+$large-down: "only screen and (max-width: #{$large})";

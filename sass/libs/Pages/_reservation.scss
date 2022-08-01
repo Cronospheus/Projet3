@@ -1,0 +1,34 @@
+label {
+  position: absolute;
+  left: -999px;
+}
+form {
+  background-color: $grey-strong;
+}
+.localisation {
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-align: justify;
+  background-color: $grey-strong;
+}
+input {
+  border: none;
+  text-align: center;
+  background-color: $grey-strong;
+}
+.fa-location-dot {
+  position: relative;
+  left: 3rem;
+}
+.reservation_txt {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 4rem;
+  background-color: $grey-light;
+  h2 {
+    padding: 0rem 2rem 1.5rem 1.5rem;
+  }
+  p {
+    padding-bottom: 3rem;
+  }
+}

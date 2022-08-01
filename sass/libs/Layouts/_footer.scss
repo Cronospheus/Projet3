@@ -1,0 +1,20 @@
+footer {
+  background-color: $black;
+  padding: 3rem;
+  text-align: center;
+  h3 {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+  }
+  a {
+    color: $white;
+  }
+  i {
+    padding-right: 1rem;
+  }
+  li {
+    padding-bottom: 1rem;
+  }
+}

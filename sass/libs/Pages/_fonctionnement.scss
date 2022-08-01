@@ -1,0 +1,41 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  li {
+    background-color: $grey-light;
+    padding: 3rem;
+    border-radius: 25px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    &:before {
+      content: counter(section);
+      counter-increment: section;
+      position: absolute;
+      left: -10px;
+      background-color: $purple-strong;
+      color: $white;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    &:hover {
+      background-color: $purple-light;
+      color: #9356dc;
+      cursor: pointer;
+    }
+  }
+  ol {
+    counter-reset: section;
+  }
+}
+.text_color_fonctionnement {
+  color: $black;
+}

@@ -1,0 +1,72 @@
+.restaurants {
+  a {
+    &:hover {
+      transform: scale(1.05);
+    }
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  margin-top: 5rem;
+  padding: 7rem 1.5rem;
+  background-color: $grey-light;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    padding-bottom: 1.5rem;
+    text-align: left;
+  }
+}
+.cards {
+  img {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  width: 95%;
+  border-radius: 15px;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  h3 {
+    margin: 1.5rem 0 0.5rem 1rem;
+  }
+  p {
+    margin: 0 0 1.5rem 1rem;
+  }
+}
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3rem;
+}
+.solid {
+  background: $button-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+.regu {
+  color: #d4d5d4;
+  &:hover {
+    display: none;
+  }
+}
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem;
+  font-weight: bold;
+  color: $green-strong;
+  background-color: $green-light;
+}
