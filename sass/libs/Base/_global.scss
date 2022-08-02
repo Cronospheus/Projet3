@@ -26,12 +26,17 @@ main {
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: bold;
-  color: $black;
+  color: $color-text;
   padding: 2rem 0 1rem 0;
   margin: 0.15rem 0;
   font-size: 2.5rem;
 }
-
+.tittle_cards {
+  @extend h1;
+}
+.list_tittle {
+  text-transform: uppercase;
+}
 img {
   object-fit: cover;
 }
@@ -39,6 +44,11 @@ img {
 a {
   text-decoration: none;
   color: $black;
+}
+
+i:hover,
+button:hover {
+  cursor: pointer;
 }
 
 li {

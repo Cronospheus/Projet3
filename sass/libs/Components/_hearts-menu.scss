@@ -1,0 +1,24 @@
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 1.5rem 1rem 1.3rem 0;
+}
+.solid {
+  background: linear-gradient(#eb72da, #a45cdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.regu {
+  color: black;
+  &:hover {
+    display: none;
+  }
+}

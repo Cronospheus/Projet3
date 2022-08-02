@@ -1,0 +1,73 @@
+.menuitem {
+  background-color: white;
+  box-shadow: 0px 1px 10px rgb(184, 178, 178);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 7rem;
+  margin: 2rem;
+  position: relative;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: flex-end;
+}
+.menuitem:hover {
+  cursor: pointer;
+}
+
+.menu_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.3rem;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_prix {
+  padding-bottom: 1.2rem;
+  font-weight: bold;
+}
+.menu_titre {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu_description {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu_confirmation {
+  position: relative;
+  font-size: 20px;
+  margin: -5.7rem -6rem 0 1.5rem;
+  background-color: #98e2d1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 75px;
+}
+
+.menuitem:hover .menu_confirmation {
+  transition-duration: 1s;
+  animation: slideLeft 1s forwards;
+}
+
+.fa-circle-check {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuitem:hover .fa-circle-check {
+  animation: slideLeftbutton 1s;
+  animation-fill-mode: forwards;
+}

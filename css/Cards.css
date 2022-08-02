@@ -21,19 +21,30 @@ main {
   margin: 0 auto;
   text-align: center;
 }
-h1,
-h2 {
+h1 {
   font-family: "Shrikhand", cursive;
   font-weight: bold;
   color: black;
+  padding: 2rem 0 1rem 0;
+  margin: 0.15rem 0;
+  font-size: 2.5rem;
 }
-h3 {
+.tittle_cards {
+  font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  color: black;
+  padding: 2rem 0 1rem 0;
+  margin: 0.15rem 0;
+  font-size: 2.5rem;
+}
+.list_tittle {
   text-transform: uppercase;
 }
 
 img {
   object-fit: cover;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -46,14 +57,7 @@ li {
   list-style-type: none;
 }
 /*ENTETE*/
-header {
-  padding: 1.3rem;
-}
-h1 {
-  padding: 2rem 0 1rem 0;
-  margin: 0.15rem 0;
-  font-size: 2.5rem;
-}
+
 .fa-arrow-left {
   position: absolute;
   left: 0;
@@ -93,7 +97,7 @@ h1 {
   position: absolute;
   right: 0;
   bottom: 0;
-  margin: 1.5rem 1rem 0 0;
+  margin: 1.5rem 1rem 1.3rem 0;
 }
 .solid {
   background: linear-gradient(#eb72da, #a45cdb);
@@ -172,7 +176,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0;
+  margin: 1.3rem;
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -318,17 +322,5 @@ footer li {
   }
   .button {
     border-radius: 0 0 40px 40px;
-  }
-}
-
-/*FOOTER*/
-@media screen and (min-width: 1024px) {
-  footer h3 {
-    text-align: center;
-  }
-
-  footer ul {
-    display: flex;
-    justify-content: space-evenly;
   }
 }
