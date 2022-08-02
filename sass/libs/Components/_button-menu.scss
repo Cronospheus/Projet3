@@ -7,4 +7,8 @@ button {
   padding: 1.5rem 5rem;
   border-radius: 25px;
   margin: 4rem 0 10rem 0;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }

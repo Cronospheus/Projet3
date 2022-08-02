@@ -21,25 +21,27 @@
   margin: 1.3rem;
   flex: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu_prix {
   padding-bottom: 1.2rem;
   font-weight: bold;
 }
 .menu_titre {
+  display: block;
   font-weight: bold;
   padding-bottom: 0.5rem;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 100%;
 }
 .menu_description {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 100%;
 }
 .menu_confirmation {
   position: relative;
